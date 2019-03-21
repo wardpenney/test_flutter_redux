@@ -3,7 +3,6 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:test_flutter_redux/reducers/app_state_reducer.dart';
 import 'package:test_flutter_redux/models/models.dart';
-import 'package:test_flutter_redux/actions/actions.dart';
 import 'package:test_flutter_redux/presentation/home_screen.dart';
 import 'package:test_flutter_redux/keys/keys.dart';
 
@@ -23,14 +22,9 @@ class MyApp extends StatelessWidget {
     return StoreProvider(
       store: store,
       child: MaterialApp(
-        title: "WARDTEST",
         routes: {
           KeysRoutes.home: (context) {
-            return HomeScreen(
-              onInit: () {
-                StoreProvider.of<AppState>(context).dispatch(SetupCounterAction());
-              },
-            );
+            return HomeScreen();
           },
         },
       ),

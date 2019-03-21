@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "490832278550",
+    "firebase_url": "https://wardtest-firestore-redux.firebaseio.com",
+    "project_id": "wardtest-firestore-redux",
+    "storage_bucket": "wardtest-firestore-redux.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490832278550:android:13ba6b0b994e99d8",
+        "android_client_info": {
+          "package_name": "com.example.test_flutter_redux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490832278550-19g8lc4ca3uki67pkopf2hgtmr09m9rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhlocSmyK5ujmM02WD9rL3DcdE_oAkZHg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
