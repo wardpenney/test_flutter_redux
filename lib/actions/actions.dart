@@ -1,16 +1,39 @@
 import 'package:test_flutter_redux/models/models.dart';
 
-class DecrementCountAction {}
-class IncrementCountAction {}
 class SetupCounterAction {}
 
-class UpdateTabAction {
-  final AppTab newTab;
+class InitAppAction {
+  @override
+  String toString() {
+    return 'InitAppAction{}';
+  }
+}
 
-  UpdateTabAction(this.newTab);
+class ConnectToDataSourceAction {
+  @override
+  String toString() {
+    return 'ConnectToDataSourceAction{}';
+  }
+}
+
+class LoadScoresAction {
+  final List<Score> scores;
+
+  LoadScoresAction(this.scores);
 
   @override
   String toString() {
-    return 'UpdateTabAction{newTab: $newTab}';
+    return 'LoadScoresAction{scores: $scores}';
+  }
+}
+
+class AddScoreAction {
+  final Score score;
+
+  AddScoreAction(this.score);
+
+  @override
+  String toString() {
+    return 'AddScoreAction{score: $score}';
   }
 }
