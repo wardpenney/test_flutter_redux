@@ -3,42 +3,35 @@ import 'package:test_flutter_redux/models/models.dart';
 
 @immutable
 class AppState {
-  final int counter;
-  final AppTab activeTab;
+  final List<Score> scores;
 
   AppState({
-    this.counter,
-    this.activeTab = AppTab.inrement,
+    this.scores,
   });
 
 	AppState copyWith({
-    AppTab activeTab,
-    int counter,
+    List<Score> scores,
   }) {
 		return new AppState(
-      activeTab: activeTab ?? this.activeTab,
-			counter: counter ?? this.counter,
+      scores: scores ?? this.scores,
 		);
 	}
 
   @override
-  int get hashCode =>
-      counter.hashCode ^
-      activeTab.hashCode;
+  int get hashCode => scores.hashCode;
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is AppState &&
-          counter == other.counter &&
-          activeTab == other.activeTab;
+          scores == other.scores;
 
   factory AppState.initial() => AppState(
-    counter: 69
+    scores: [],
   );
 
   @override
   String toString() {
-    return 'AppState{counter: $counter, activeTab: $activeTab}';
+    return 'AppState{scores: $scores}';
   }
 }
