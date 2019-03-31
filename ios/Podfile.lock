@@ -25,6 +25,10 @@ PODS:
   - Firebase/Firestore (5.17.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (= 1.0.1)
+  - firebase_auth (0.0.1):
+    - Firebase/Auth
+    - Firebase/Core
+    - Flutter
   - firebase_core (0.0.1):
     - Firebase/Core
     - Flutter
@@ -120,6 +124,7 @@ PODS:
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
+  - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `.symlinks/flutter/ios`)
 
@@ -146,6 +151,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   cloud_firestore:
     :path: ".symlinks/plugins/cloud_firestore/ios"
+  firebase_auth:
+    :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   Flutter:
@@ -155,6 +162,7 @@ SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
   cloud_firestore: cd6e849ecb8ab43e5a7a5f1f169304ca65436c03
   Firebase: 59d557e064217fab6a03ff00baa73c06e73832e6
+  firebase_auth: 02ced56521bc9f220d40edda27b1ec5a2fcdf01e
   firebase_core: ce5006bb48508ee4e71e0f429a3f519bb8ee2961
   FirebaseAnalytics: 75e4bbc6417d190cc98ec1f17c41a4fad4c2c976
   FirebaseAuth: 0f61e1329237da5682c49c9abd135e8f9d07a151
